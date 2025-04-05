@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
     <title>Sobre Mim</title>
 </head>
 <body>
     <article>
         <!-- Introdução ao perfil-->
         <h1>Olá, eu sou [Seu Nome]</h1>
-        <img src="assets/images/perfil.png" alt="Ícone com avatar de um usuário">
+        <img src="assets/images/perfil.png" alt="Ícone com avatar de um usuário" class="foto-perfil">
 
 
         <!-- Descrição do perfil -->
-        <p>Sobre mim:</p>
+        <h2>Sobre mim:</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia, augue a efficitur faucibus, mauris ipsum interdum arcu, non interdum mauris tellus nec dui. Aliquam pulvinar fringilla metus quis semper.</p>
         
-        <p>Coisas que gosto de fazer:</p>
+        <h2>Coisas que gosto de fazer:</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni asperiores, placeat doloremque perspiciatis quae fugiat itaque accusantium sequi harum aliquam, eligendi consequuntur modi! Veritatis doloribus voluptas error ad, provident nam.</p>
 
-        <p>Meus principais pontos fortes:</p>
+        <h2>Meus principais pontos fortes:</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit veritatis pariatur sint ex suscipit. Blanditiis facilis necessitatibus reiciendis mollitia dolor. Placeat consequuntur quod debitis dicta consectetur laudantium id nostrum ad?</p>
 
-        <button>Clique aqui para me seguir</button>
+        <button onclick="mostrarMensagem()">Clique aqui para me seguir</button>
 
         <!-- Link para as mídias sociais-->
-        <div>
+        <div class="midias-sociais">
             <a href="https://linkedin.com" target="_blank">
                 <img src="assets/images/linkedin.png" alt="Logo do linkedin">
             </a>
@@ -34,5 +35,11 @@
             </a>
         </div>
     </article>
+
+    <script>
+        function mostrarMensagem(){
+            alert('Obrigado!');
+        }
+    </script>
 </body>
 </html>
